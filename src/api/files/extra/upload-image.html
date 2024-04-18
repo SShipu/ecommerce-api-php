@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <form method="POST" action="image-resize.php" enctype="multipart/form-data">
+        <p>
+            <input type="file" name="file" onchange="onFileSelected();" id="image" accept="image/*" required="">
+        </p>
+
+        <p>
+            <input type="number" name="enter_dimension" required="">
+        </p>
+        <input type="submit" name="submit">
+    </form>
+
+    <img src="" id="preview">
+
+    <script type="text/javascript">
+        function onFileSelected() {
+            var image = document.getElementById("image").files;
+            if (image.length == 0) {
+                console.log("Please select an image");
+                return;
+            }
+            image = image[0];
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('preview').setAttribute('src', e.target.result);
+            }
+            reader.readAsDataURL(image);
+        }
+    </script>
+
+</body>
+
+</html>

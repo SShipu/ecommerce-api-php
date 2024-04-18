@@ -1,0 +1,26 @@
+{
+    "name": "irap/autoloader",
+    "type": "library",
+    "description": "An package to make it easy to autoload code.",
+    "keywords": ["autoloader"],
+    "homepage": "https://github.com/iRAP-software/package-autoloader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stuart Page",
+            "email": "stuart.page@irap.org"
+        },
+        {
+            "name": "Samrat Rai",
+            "email": "samrat.rai@irap.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "iRAP\\Autoloader\\": ""
+        }
+    }
+}

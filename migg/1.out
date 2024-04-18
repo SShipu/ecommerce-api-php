@@ -1,0 +1,7 @@
+[]
+Warning: Cannot modify header information - headers already sent by (output started at /var/www/html/ottoman-api-php/src/framework/framework.php:14) in /var/www/html/ottoman-api-php/src/framework/framework.php on line 13
+[]
+Warning: Cannot modify header information - headers already sent by (output started at /var/www/html/ottoman-api-php/src/framework/framework.php:14) in /var/www/html/ottoman-api-php/src/framework/framework.php on line 13
+[]
+Warning: Cannot modify header information - headers already sent by (output started at /var/www/html/ottoman-api-php/src/framework/framework.php:14) in /var/www/html/ottoman-api-php/src/framework/framework.php on line 13
+[]
